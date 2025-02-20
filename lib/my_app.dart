@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nti_form/features/signup/view/screens/sign_up_screen.dart';
+import 'package:nti_form/features/splash/view/screens/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -7,12 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'NTI form',
+      debugShowCheckedModeBanner: false,
+      title: 'NTI Form',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SignUpScreen(),
+      home: const SplashScreen(),
     );
   }
 }
